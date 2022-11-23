@@ -24,6 +24,10 @@ createApp({
                 this.todolist[i].done=false;
             }
         },
+
+        eliminateElement(i){
+            this.todolist.splice(i, 1)
+        }
     },
 
 }).mount("#app")
