@@ -11,6 +11,8 @@ createApp({
                     done: false,
                 }
             ],
+
+            stringa:""
         }
     },
     methods:{
@@ -27,6 +29,14 @@ createApp({
 
         eliminateElement(i){
             this.todolist.splice(i, 1)
+        },
+
+        submitElement(){
+            const newElement={
+                text:this.stringa,
+                done:false
+            }
+            this.todolist.push(newElement)
         }
     },
 
